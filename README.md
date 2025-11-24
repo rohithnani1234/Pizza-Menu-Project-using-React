@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# 🍕 React Pizza Menu App  
+A beginner-friendly React project where I built a dynamic pizza menu UI using reusable components, props, JSX, and conditional rendering. This project helped me strengthen my React fundamentals while keeping the code clean and modular.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 🚀 Project Overview  
+This app displays a list of pizzas, indicates which ones are sold out, and even shows whether the shop is currently open. It’s a simple UI, but it covers all the essential building blocks of React.
 
-In the project directory, you can run:
+**Special thanks to my mentor** for guiding me through these concepts and helping me understand the component architecture the right way. 🙌
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🧩 What I Learned
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ✔️ Component-Based Architecture  
+I built separate components for each part of the UI:
+- `App`
+- `Header`
+- `Menu`
+- `Pizza`
+- `Footer`
+- `Order`
 
-### `npm test`
+Each component handles one clear responsibility, making the project easy to scale.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### ✔️ Props  
+Passed data like:
+- Name  
+- Price  
+- Ingredients  
+- Image  
+- Sold-out status  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This helped me understand how to make components dynamic and reusable.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ✔️ JSX & Rendering  
+Used JSX to structure the UI clearly and cleanly, with conditional rendering such as:
+- Showing menu only when pizzas exist  
+- Displaying “Sold Out” dynamically  
+- Showing order message only during open hours  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### ✔️ List Rendering  
+Mapped over an array of pizza objects to render the menu programmatically instead of hardcoding multiple `<Pizza />` components.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### ✔️ Conditional Styling  
+Pizzas that are sold out get a special class (`sold-out`) that changes their look.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### ✔️ React 18 Setup  
+Used:
+```js
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
